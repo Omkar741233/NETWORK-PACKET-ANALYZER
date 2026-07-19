@@ -120,99 +120,68 @@ sudo python3 packet_analyzer.py -i eth0 -c 10 --use-scapy
 
 ---
 
-# 🪟 Windows
 
-### Step 1: Install Python 3
+---
 
-Download and install Python from:
 
+## 🪟 Windows Installation
+
+### Step 1: Clone the Repository
+
+```cmd
+git clone https://github.com/Omkar741233/NETWORK-PACKET-ANALYZER.git
+cd NETWORK-PACKET-ANALYZER
+```
+### Step 2: Install Python
+
+Download and install **Python 3.x** from:
 https://www.python.org/downloads/
 
-### Step 2: Install Npcap
+### Step 3: Install Npcap
 
 Download and install **Npcap** from:
-
 https://npcap.com/
 
-### Step 3: Install Scapy
-
-Open Command Prompt as **Administrator**:
+### Step 4: Install Scapy (Optional)
 
 ```cmd
 pip install scapy
 ```
 
-### Step 4: Run the program
-
-Using raw sockets:
+### Step 5: Navigate to the Project Directory
 
 ```cmd
-python packet_analyzer.py -i YOUR_LOCAL_IP -c 10
+cd C:\Users\USER\network
+```
+
+### Step 6: Run the Program
+
+Using raw socket capture:
+
+```cmd
+python packet_analyzer.py -c 5
+```
+
+Capture 20 packets:
+
+```cmd
+python packet_analyzer.py -c 20
 ```
 
 Using Scapy:
 
 ```cmd
-python packet_analyzer.py -i YOUR_LOCAL_IP -c 10 --use-scapy
+python packet_analyzer.py -c 5 --use-scapy
 ```
 
-> Replace `YOUR_LOCAL_IP` with your computer's IPv4 address (for example, `192.168.1.100`).
+Specify a local IP address:
 
----
-
-# 🍎 macOS
-
-### Step 1: Install Homebrew (if not already installed)
-
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```cmd
+python packet_analyzer.py -i YOUR_IP_ADDRESS -c 5
 ```
 
-### Step 2: Install Python
+...
 
-```bash
-brew install python
-```
-
-### Step 3: Install Scapy
-
-```bash
-pip3 install scapy
-```
-
-### Step 4: Run the program
-
-Using raw sockets:
-
-```bash
-sudo python3 packet_analyzer.py -i en0 -c 10
-```
-
-Using Scapy:
-
-```bash
-sudo python3 packet_analyzer.py -i en0 -c 10 --use-scapy
-```
-
-> On most Macs, the primary Wi-Fi interface is `en0`.
-
----
-
-## 📦 Install Dependencies from requirements.txt
-
-If your project includes a `requirements.txt` file:
-
-```bash
-pip install -r requirements.txt
-```
-
-or
-
-```bash
-pip3 install -r requirements.txt
-```
-
----
 
 ## ⚠ Notes
 
