@@ -70,83 +70,155 @@ Before running this project, ensure you have the following installed:
 
 
 ---
-
 ## 🚀 Installation
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Omkar741233/NETWORK-PACKET-ANALYZER.git
+git clone https://github.com/your-username/Network-Packet-Analyzer.git
+cd Network-Packet-Analyzer
 ```
 
 ---
 
-## 🐧 Linux (Kali Linux / Ubuntu / Debian)
+# 🐧 Linux (Kali Linux, Ubuntu, Debian)
 
-### Install Python and pip
+### Step 1: Update the system
 
 ```bash
 sudo apt update
+```
 
+### Step 2: Install Python and pip
+
+```bash
 sudo apt install python3 python3-pip -y
 ```
 
-### Install Scapy
+### Step 3: Install Scapy (Optional)
 
 ```bash
 pip3 install scapy
 ```
 
-### Run the Project
+### Step 4: Run the program
+
+Using raw sockets:
 
 ```bash
-sudo python3 main.py
+sudo python3 packet_analyzer.py -i eth0 -c 10
 ```
+
+Using Scapy:
+
+```bash
+sudo python3 packet_analyzer.py -i eth0 -c 10 --use-scapy
+```
+
+> Replace `eth0` with your network interface (for example, `wlan0` or `ens33`).
 
 ---
 
-## 🪟 Windows
+# 🪟 Windows
 
-### Prerequisites
+### Step 1: Install Python 3
 
-- Install **Python 3.x**
-- Install **Npcap** (required for packet capturing)
-- Open Command Prompt or PowerShell
+Download and install Python from:
 
-### Install Scapy
+https://www.python.org/downloads/
 
-```bash
+### Step 2: Install Npcap
+
+Download and install **Npcap** from:
+
+https://npcap.com/
+
+### Step 3: Install Scapy
+
+Open Command Prompt as **Administrator**:
+
+```cmd
 pip install scapy
 ```
 
-### Run the Project
+### Step 4: Run the program
 
-```bash
-python main.py
+Using raw sockets:
+
+```cmd
+python packet_analyzer.py -i YOUR_LOCAL_IP -c 10
 ```
 
-> **Note:** Run Command Prompt or PowerShell as **Administrator** for live packet capture.
+Using Scapy:
+
+```cmd
+python packet_analyzer.py -i YOUR_LOCAL_IP -c 10 --use-scapy
+```
+
+> Replace `YOUR_LOCAL_IP` with your computer's IPv4 address (for example, `192.168.1.100`).
 
 ---
 
-## 🍎 macOS
+# 🍎 macOS
 
-### Install Python (if not already installed)
+### Step 1: Install Homebrew (if not already installed)
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+### Step 2: Install Python
 
 ```bash
 brew install python
 ```
 
-### Install Scapy
+### Step 3: Install Scapy
 
 ```bash
 pip3 install scapy
 ```
 
-### Run the Project
+### Step 4: Run the program
+
+Using raw sockets:
 
 ```bash
-sudo python3 main.py
+sudo python3 packet_analyzer.py -i en0 -c 10
+```
+
+Using Scapy:
+
+```bash
+sudo python3 packet_analyzer.py -i en0 -c 10 --use-scapy
+```
+
+> On most Macs, the primary Wi-Fi interface is `en0`.
+
+---
+
+## 📦 Install Dependencies from requirements.txt
+
+If your project includes a `requirements.txt` file:
+
+```bash
+pip install -r requirements.txt
+```
+
+or
+
+```bash
+pip3 install -r requirements.txt
+```
+
+---
+
+## ⚠ Notes
+
+- Run the program with **Administrator** (Windows) or **Root/Sudo** (Linux/macOS) privileges.
+- Ensure the correct network interface or IP address is specified.
+- Scapy is optional. If it is not installed, the program automatically falls back to raw socket packet capture.
+- Packet capturing may require additional permissions depending on your operating system.
 ```
 
 ## 🖥 Example Output
