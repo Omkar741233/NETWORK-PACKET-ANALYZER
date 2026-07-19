@@ -228,58 +228,160 @@ Display them in README:
 ```
 
 ---
+## ⚙️ How It Works
 
-## 🧠 How It Works
+The Network Packet Analyzer captures and analyzes live network traffic using either **raw sockets** or the **Scapy** library. It listens on a specified network interface (or automatically selects one), processes each captured packet, extracts key networking information, and displays the results in a readable format.
 
-1. Starts listening on the selected network interface.
-2. Captures packets in real time.
-3. Extracts important packet information.
-4. Identifies the protocol.
-5. Displays packet details in the terminal.
+### Workflow
+
+1. **Start the Program**
+   - The user runs the application from the command line and specifies the number of packets to capture and, optionally, the network interface.
+
+2. **Initialize Packet Capture**
+   - The program checks whether Scapy should be used. If not, it captures packets using raw sockets.
+
+3. **Listen for Network Traffic**
+   - The analyzer continuously listens for incoming and outgoing packets on the selected network interface.
+
+4. **Capture Packets**
+   - Each packet is intercepted in real time before being processed.
+
+5. **Analyze Packet Headers**
+   - The program extracts important information from the packet, including:
+     - Source IP Address
+     - Destination IP Address
+     - Protocol (TCP, UDP, ICMP, etc.)
+     - Source and Destination Ports (when applicable)
+     - Packet Payload
+     - Additional protocol-specific details
+
+6. **Display Packet Information**
+   - The extracted information is formatted and displayed in the terminal, making it easy to understand the captured network traffic.
+
+7. **Stop After Capturing the Requested Number of Packets**
+   - Once the specified packet count is reached, the program exits gracefully.
 
 ---
 
+## 🔄 Working Flow
+
+```
+User Starts Program
+        │
+        ▼
+Select Network Interface
+        │
+        ▼
+Initialize Raw Socket / Scapy
+        │
+        ▼
+Capture Live Network Packets
+        │
+        ▼
+Extract Packet Headers
+(IP, TCP, UDP, ICMP)
+        │
+        ▼
+Analyze Packet Information
+        │
+        ▼
+Display Packet Details
+        │
+        ▼
+Repeat Until Packet Count is Reached
+        │
+        ▼
+Program Ends
+```
+
+
+---
 ## 📚 Concepts Used
 
-- Packet Sniffing
-- IP Header Analysis
-- TCP
-- UDP
-- ICMP
-- Network Interfaces
-- Packet Parsing
-- Cybersecurity Basics
+This project is based on the following networking and cybersecurity concepts:
+
+- **Computer Networks**
+- **Packet Sniffing**
+- **Network Packet Analysis**
+- **Raw Socket Programming**
+- **Scapy Library**
+- **IP (Internet Protocol)**
+- **TCP (Transmission Control Protocol)**
+- **UDP (User Datagram Protocol)**
+- **ICMP (Internet Control Message Protocol)**
+- **Packet Header Parsing**
+- **Source and Destination IP Address Analysis**
+- **Port Number Analysis**
+- **Hexadecimal Data Representation (Hex Dump)**
+- **Command-Line Interface (CLI)**
+- **Network Interface Selection**
+- **Real-Time Packet Capture**
+- **Exception Handling**
+- **Cross-Platform Programming (Windows, Linux, macOS)**
+- **Python Programming**
+
+
+---
+## 🚀 Future Improvements
+
+The following features can be added in future versions of this project:
+
+- Add a Graphical User Interface (GUI) using Tkinter or PyQt.
+- Save captured packets to **PCAP** files for analysis in Wireshark.
+- Export packet details to **CSV**, **JSON**, or **PDF** reports.
+- Implement protocol-based packet filtering (TCP, UDP, ICMP, HTTP, DNS, etc.).
+- Add IP address geolocation and hostname resolution.
+- Display real-time network traffic statistics and protocol usage.
+- Detect suspicious or malicious network activity.
+- Add support for IPv6 packet analysis.
+- Improve packet payload inspection with detailed protocol decoding.
+- Introduce multi-threading for better performance during high network traffic.
+- Create a web-based dashboard for remote monitoring.
+- Add logging functionality to maintain packet capture history.
+- Support packet capture on multiple network interfaces simultaneously.
+- Implement customizable capture filters and search functionality.
+- Add graphical charts for bandwidth and traffic analysis.
+
 
 ---
 
-## 🎯 Future Improvements
+## ⚠️ Disclaimer
 
-- Graphical User Interface (GUI)
-- Save packets to PCAP files
-- Export captured data to CSV
-- Protocol statistics
-- Packet filtering
-- DNS packet analysis
-- HTTP packet inspection
-- Network traffic visualization
+This project is developed **solely for educational and research purposes** to help users understand the fundamentals of network packet analysis and cybersecurity.
 
+Users are responsible for ensuring they have **proper authorization** before capturing or analyzing network traffic. Unauthorized packet sniffing or monitoring on networks you do not own or have permission to access may violate privacy laws, organizational policies, or local regulations.
+
+The author is **not responsible** for any misuse, unauthorized activities, or damages resulting from the use of this software. Always use this tool ethically, responsibly, and in compliance with applicable laws.
 ---
-
-## ⚠ Disclaimer
-
-This project is created **only for educational and ethical purposes**. Use it only on networks that you own or have permission to monitor.
-
----
-
 ## 🤝 Contributing
 
-Contributions are welcome.
+Contributions are welcome! If you would like to improve this project, please follow these steps:
 
-1. Fork the repository
-2. Create a new branch
-3. Commit your changes
-4. Push the branch
-5. Open a Pull Request
+1. Fork this repository.
+2. Create a new branch for your feature or bug fix.
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. Make your changes and commit them.
+   ```bash
+   git commit -m "Add your meaningful commit message"
+   ```
+4. Push your branch to your fork.
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+5. Open a Pull Request (PR) describing your changes.
+
+### Contribution Guidelines
+
+- Follow the existing code style and project structure.
+- Write clear, meaningful commit messages.
+- Test your changes before submitting.
+- Update the documentation (`README.md`) if your changes affect usage or functionality.
+- Be respectful and constructive during code reviews.
+
+Thank you for helping improve this project! 🚀
+
 
 ---
 
@@ -305,4 +407,14 @@ https://www.linkedin.com/in/YOUR_LINKEDIN_PROFILE/
 
 ## ⭐ Support
 
-If you found this project useful, please consider giving it a ⭐ on GitHub.
+If you find this project useful, consider supporting it by:
+
+- ⭐ Starring this repository on GitHub.
+- 🍴 Forking the repository to contribute or build upon it.
+- 🐛 Reporting bugs by opening an Issue.
+- 💡 Suggesting new features or improvements.
+- 📢 Sharing the project with others who are interested in networking and cybersecurity.
+
+Your support and feedback help improve this project and encourage future development.
+
+Thank you for your support! 🚀
