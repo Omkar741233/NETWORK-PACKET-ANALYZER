@@ -72,7 +72,7 @@ git clone https://github.com/your-username/Network-Packet-Analyzer.git
 ### 2. Move to the project directory
 
 ```bash
-cd Network-Packet-Analyzer
+cd NETWORK-PACKET-ANALYZER
 ```
 
 ### 3. Install dependencies
