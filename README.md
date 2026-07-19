@@ -203,30 +203,6 @@ Length         : 60 Bytes
 
 ----------------------------------------
 ```
-
----
-
-## 📷 Screenshots
-
-Add screenshots inside the **screenshots** folder.
-
-Example:
-
-```
-screenshots/output1.png
-screenshots/output2.png
-```
-
-Display them in README:
-
-```md
-## Screenshots
-
-![Output 1](screenshots/output1.png)
-
-![Output 2](screenshots/output2.png)
-```
-
 ---
 ## ⚙️ How It Works
 
