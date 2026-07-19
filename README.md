@@ -71,43 +71,83 @@ Before running this project, ensure you have the following installed:
 
 ---
 
-## ⚙ Installation
+## 🚀 Installation
 
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/your-username/Network-Packet-Analyzer.git
-```
-
-### 2. Move to the project directory
+### 1. Clone the Repository
 
 ```bash
-cd NETWORK-PACKET-ANALYZER
-```
-
-### 3. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-or
-
-```bash
-pip install scapy
+git clone https://github.com/Omkar741233/NETWORK-PACKET-ANALYZER.git
 ```
 
 ---
 
-## ▶ Running the Project
+## 🐧 Linux (Kali Linux / Ubuntu / Debian)
 
-Run the program with administrator privileges.
+### Install Python and pip
+
+```bash
+sudo apt update
+
+sudo apt install python3 python3-pip -y
+```
+
+### Install Scapy
+
+```bash
+pip3 install scapy
+```
+
+### Run the Project
 
 ```bash
 sudo python3 main.py
 ```
 
 ---
+
+## 🪟 Windows
+
+### Prerequisites
+
+- Install **Python 3.x**
+- Install **Npcap** (required for packet capturing)
+- Open Command Prompt or PowerShell
+
+### Install Scapy
+
+```bash
+pip install scapy
+```
+
+### Run the Project
+
+```bash
+python main.py
+```
+
+> **Note:** Run Command Prompt or PowerShell as **Administrator** for live packet capture.
+
+---
+
+## 🍎 macOS
+
+### Install Python (if not already installed)
+
+```bash
+brew install python
+```
+
+### Install Scapy
+
+```bash
+pip3 install scapy
+```
+
+### Run the Project
+
+```bash
+sudo python3 main.py
+```
 
 ## 🖥 Example Output
 
