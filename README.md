@@ -25,39 +25,49 @@ This project demonstrates the basics of packet sniffing using Python and Scapy a
 - Lightweight and beginner-friendly
 
 ---
+## 🛠️ Technologies Used
 
-## 🛠 Technologies Used
-
-- Python 3
-- Scapy
-- Kali Linux
-- Linux Networking
-
+- **Python 3** – Core programming language used to develop the application.
+- **Scapy** – Python library for packet sniffing, packet manipulation, and network analysis.
+- **Kali Linux** – Operating system used for development and testing.
+- **Linux Networking** – Used for capturing and analyzing network traffic.
+- **Command Line Interface (CLI)** – User interface for running the application and viewing packet information.
+- **Git** – Version control system for tracking changes.
+- **GitHub** – Repository hosting and project collaboration platform.
 ---
 
-## 📂 Project Structure
+
 
 ```
+## 📂 Project Structure
+
 Network-Packet-Analyzer/
 │
-├── main.py
-├── requirements.txt
-├── README.md
-├── screenshots/
+├── main.py                 # Main program file
+├── requirements.txt        # Python dependencies
+├── README.md               # Project documentation
+├── LICENSE                 # MIT License
+├── screenshots/            # Project screenshots
 │   ├── output1.png
-│   ├── output2.png
-│
-└── LICENSE
+│   └── output2.png
+├── output/                 # Saved output files (optional)
+└── .gitignore              # Files ignored by Git
+
 ```
 
 ---
 
 ## 📋 Requirements
 
-- Python 3.x
-- Kali Linux (Recommended)
-- Root/Sudo privileges
-- Scapy Library
+Before running this project, ensure you have the following installed:
+
+- **Python 3.8 or later**
+- **Scapy** (`pip install scapy`)
+- **Npcap** (Windows only, if running on Windows)
+- **Kali Linux** or any Linux distribution (recommended)
+- **Root/Sudo privileges** (required for live packet capture)
+- **Git** (optional, for cloning the repository)
+
 
 ---
 
