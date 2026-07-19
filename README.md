@@ -401,7 +401,7 @@ GitHub:
 https://github.com/Omkar741233
 
 LinkedIn:
-https://www.linkedin.com/in/YOUR_LINKEDIN_PROFILE/
+https://www.linkedin.com/in/omkar-ghadge-b45764409/
 
 ---
 
