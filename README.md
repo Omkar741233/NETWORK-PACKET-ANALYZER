@@ -190,7 +190,7 @@ python packet_analyzer.py -i YOUR_IP_ADDRESS -c 5
 - Scapy is optional. If it is not installed, the program automatically falls back to raw socket packet capture.
 - Packet capturing may require additional permissions depending on your operating system.
 ```
-
+```
 ## 🖥 Example Output
 
 ```
