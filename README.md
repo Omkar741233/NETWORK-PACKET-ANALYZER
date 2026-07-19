@@ -75,8 +75,8 @@ Before running this project, ensure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/Network-Packet-Analyzer.git
-cd Network-Packet-Analyzer
+git clone https://github.com/Omkar741233/NETWORK-PACKET-ANALYZER.git
+cd NETWORK-PACKET-ANALYZER
 ```
 
 ---
@@ -108,6 +108,7 @@ Using raw sockets:
 ```bash
 sudo python3 packet_analyzer.py -i eth0 -c 10
 ```
+> you can change the numbers of packets you see '10' it is a number of packets
 
 Using Scapy:
 
