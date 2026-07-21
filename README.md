@@ -76,7 +76,7 @@ Before running this project, ensure you have the following installed:
 
 ```bash
 git clone https://github.com/Omkar741233/NETWORK-PACKET-ANALYZER.git
-cd NETWORK-PACKET-ANALYZER
+
 ```
 
 ---
@@ -101,7 +101,18 @@ sudo apt install python3 python3-pip -y
 pip3 install scapy
 ```
 
-### Step 4: Run the program
+### step:4 Open the Project Folder
+```bash
+cd NETWORK-PACKET-ANALYZER
+```
+### step:5 Verify Installation
+```bash
+python --version
+
+pip show scapy
+```
+
+### Step 6: Run the program
 
 Using raw sockets:
 
@@ -130,7 +141,7 @@ sudo python3 packet_analyzer.py -i eth0 -c 10 --use-scapy
 
 ```cmd
 git clone https://github.com/Omkar741233/NETWORK-PACKET-ANALYZER.git
-cd NETWORK-PACKET-ANALYZER
+
 ```
 ### Step 2: Install Python
 
@@ -151,9 +162,12 @@ pip install scapy
 ### Step 5: Navigate to the Project Directory
 
 ```cmd
-cd C:\Users\USER\network
-```
+cd C:\Users\USER\
 
+cd NETWORK-PACKET-ANALYZER
+```
+> our project Directory are Diffrents it is "my Directory"
+> 
 ### Step 6: Run the Program
 
 Using raw socket capture:
