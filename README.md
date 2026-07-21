@@ -72,47 +72,45 @@ Before running this project, ensure you have the following installed:
 ---
 ## 🚀 Installation
 
-### 1. Clone the Repository
+# 🐧 Linux (Kali Linux, Ubuntu, Debian)
+
+### step:1 Clone the Repository
 
 ```bash
 git clone https://github.com/Omkar741233/NETWORK-PACKET-ANALYZER.git
 
 ```
 
----
-
-# 🐧 Linux (Kali Linux, Ubuntu, Debian)
-
-### Step 1: Update the system
+### Step 2: Update the system
 
 ```bash
 sudo apt update
 ```
 
-### Step 2: Install Python and pip
+### Step 3: Install Python and pip
 
 ```bash
 sudo apt install python3 python3-pip -y
 ```
 
-### Step 3: Install Scapy (Optional)
+### Step 4: Install Scapy (Optional)
 
 ```bash
 pip3 install scapy
 ```
 
-### step:4 Open the Project Folder
+### step:5 Open the Project Folder
 ```bash
 cd NETWORK-PACKET-ANALYZER
 ```
-### step:5 Verify Installation
+### step:6 Verify Installation
 ```bash
 python --version
 
 pip show scapy
 ```
 
-### Step 6: Run the program
+### Step:7 Run the program
 
 Using raw sockets:
 
